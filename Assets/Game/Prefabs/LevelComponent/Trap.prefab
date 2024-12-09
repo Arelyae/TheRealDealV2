@@ -118,5 +118,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4941447f19f50c45bbdb865e11d13de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageInflicted: 10
+  damageInflicted: 1
   RSE_DamageEvent: {fileID: 11400000, guid: cc3f0ac07262b76448766a910e875f9f, type: 2}
