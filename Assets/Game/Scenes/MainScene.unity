@@ -2214,7 +2214,7 @@ PrefabInstance:
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
       propertyPath: OnReset.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
@@ -2239,7 +2239,7 @@ PrefabInstance:
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
       propertyPath: OnReset.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SendMessageUpwards
+      value: ShowAllGameObjects
       objectReference: {fileID: 0}
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
@@ -2254,7 +2254,7 @@ PrefabInstance:
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
       propertyPath: OnReset.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Component, UnityEngine
+      value: GameObjectManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2970412662282147440, guid: 5b6278d9438111d40ae590fc59e89bab,
         type: 3}
