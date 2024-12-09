@@ -52,7 +52,11 @@ public class PlayerHP : MonoBehaviour
     private void OnHPChange()
     {
         uIManager.UpdateUI();
-        OnHPChanged.Invoke();
-        if (RSO_PlayerHP.Value <= 0) RSE_DeathEvent.deathEvent?.Invoke();
+        if (RSO_PlayerHP.Value > 0) OnHPChanged.Invoke();
+        if (RSO_PlayerHP.Value <= 0) 
+        {
+                    RSE_DeathEvent.deathEvent?.Invoke();
+                    OnReset.Invoke();
+        }
     }
 }
