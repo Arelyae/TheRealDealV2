@@ -1,6 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
+
 public class PlayerHP : MonoBehaviour
 {
+    [Header("Unity Events")]
+    public UnityEvent OnHPChanged;
+    public UnityEvent OnReset;
+
     [Header("Settings")]
     [SerializeField] private int playerHP;
 
@@ -46,6 +52,7 @@ public class PlayerHP : MonoBehaviour
     private void OnHPChange()
     {
         uIManager.UpdateUI();
+        OnHPChanged.Invoke();
         if (RSO_PlayerHP.Value <= 0) RSE_DeathEvent.deathEvent?.Invoke();
     }
 }
